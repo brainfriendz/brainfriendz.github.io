@@ -1,0 +1,332 @@
+/*----------------------------------------
+COLOUR PALETTE:
+
+heading: #36434d;
+sub-heading: #8d8c8e;
+text: #7d7d7d;
+button-blue: #0e83dc;
+footer: #494949;
+
+-----------------------------------------*/
+*{
+    box-sizing: border-box;
+    /*    border: 1px solid red;*/
+}
+body{
+    font-family: "museo-sans-rounded", "Helvetica Neue", Arial, sans-serif;
+    font-size: 16px;
+    font-weight: normal;
+    -webkit-font-smoothing: antialiased;
+    line-height: 1.625;
+    color: #898989;   
+}
+h1,h3,h2{
+    color: #36434d;
+    margin-bottom: 13px;
+}
+h1{
+    font-weight: bold;
+    font-size: 45px;
+    line-height: 1.25;
+}
+h2{
+    font-weight: lighter;
+}
+h3{
+    font-size: 22px;
+    font-weight: bold;
+}
+p{
+    font-weight: bold;
+    margin: 0 0 13px;
+    letter-spacing: 0.4px;
+}
+a,
+a:hover,
+a:visited,
+a:active{
+    text-decoration: none !important;
+    color: inherit;
+}
+
+.center{
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    /*    justify-content: center;*/
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+}
+.center-text{
+    text-align: center;
+}
+.row:after {
+    clear: both;
+}
+.row:before,
+.row:after {
+    content: " ";
+    display: table;
+}
+.sub-heading{
+    font-size: 25px;
+    color: #6c6c6c ;
+}
+.foreign{
+    color: #514f53;
+}
+.foreign-span{
+    color: #db4444;
+}
+.last-call{
+    line-height: 30px;
+    font-size: 23px;
+    font-weight: normal;
+}
+/*----------------------------------------
+HEADER
+-----------------------------------------*/
+header{
+    height: 100vh;
+    background-image: url(img/background.jpg);
+    background-size: cover;
+}
+header,
+section{
+    margin-bottom: 125px;
+}
+.navbar{
+    margin: 30px 0;
+}
+.navbar-brand{
+    margin-top: -15px;
+    padding: 0;
+}
+.navbar-on-right{
+    float: right;
+}
+.navbar-on-right li{
+    display: inline-block;
+}
+ul{
+    list-style: none;
+}
+ul li{
+    padding: 0 20px;
+}
+ul li a{
+    font-size: 14px;
+    color: #6b6f72;
+    font-weight: bold;
+}
+.input-group{
+    position: relative;
+    display: table;
+    border-collapse: separate;
+}
+form{
+    display: block;
+    width: 80%;
+    margin-top: 50px;
+}
+.form-control {
+    display: block;
+    width: 50%;
+    height: 52px;
+    padding: 6px 12px;
+    font-size: 16px;
+    line-height: 1.625;
+    color: #8599a9;
+    background-color: #fff;
+    background-image: none;
+    border: 1px solid #D6D6E2;
+    border-radius: 5px;
+    box-shadow: inset 0 1px 1px rgba(0,0,0,0.075);
+    -webkit-transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
+    transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
+}
+.form-control, 
+.form-control:focus {
+    box-shadow: none;
+}
+.btn {
+    display: inline-block;
+    height: 52px;
+    max-width: 150px;
+    margin-bottom: 0;
+    font-weight: 700;
+    text-align: center;
+    vertical-align: middle;
+    -ms-touch-action: manipulation;
+    touch-action: manipulation;
+    cursor: pointer;
+    background-image: none;
+    border: 1px solid transparent;
+    white-space: nowrap;
+    padding: 6px 12px;
+    font-size: 16px;
+    line-height: 1.625;
+    border-radius: 5px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+a.btn-primary,
+a.btn-primary:active,
+a.btn-primary:visited{
+    color: #fff;
+    background-color: #2b9cf2;
+    border-color: transparent;
+    text-decoration: none;
+}
+.btn-primary:hover{
+    color: #fff;
+    background-color: #0e83dc;
+    border-color: transparent;
+}
+.btn-navbar{
+    padding: 10px 10px !important;
+    font-size: 14px;
+    line-height: 1.5;
+    border-radius: 5px;
+}
+header img{
+    max-width: 100%;
+}
+.store{
+    margin-top: 100px;
+}
+#product-description .row{
+    margin-bottom: 100px;
+}
+.feature-icon{
+    text-align: center;
+}
+#sign-up{
+    background-image: url("img/geometry.png");
+    background-repeat: repeat;
+    padding: 100px 0 ;
+    margin-bottom: 0;
+}
+footer{
+    background-color: #494949;
+    color: #fff;
+    padding: 30px 0;
+}
+
+footer .mail{
+    display: inline-block;
+    margin-right: 5px;
+    font-weight: normal;
+}
+/*----------------------------------------
+ANIMATIONS
+-----------------------------------------*/
+/*
+.js--wp-1{
+opacity: 0;
+}
+.js--wp-1 .animated{
+opacity: 1;
+}
+*/
+/*----------------------------------------
+FONTS
+-----------------------------------------*/
+@font-face {
+    font-family: "museo-sans-rounded";
+    src: url(fonts/MuseoSansRounded300.ttf) format('truetype');
+    font-weight: lighter ;
+}
+@font-face {
+    font-family: "museo-sans-rounded";
+    src: url(fonts/MuseoSansRounded500.ttf) format('truetype');
+    font-weight: normal;
+}
+@font-face {
+    font-family: "museo-sans-rounded";
+    src: url(fonts/MuseoSansRounded700.ttf) format('truetype');
+    font-weight: bold;
+}
+
+/*----------------------------------------
+MEDIA QUERIES
+-----------------------------------------*/
+/* Small devices (tablets, 768px and up) */
+@media (max-width: 768px) { 
+    header{
+        height: auto;
+        text-align: center;
+        font-weight: bolder;
+    }
+    h1{
+        font-size: 35px;
+    }
+    .sub-heading{
+        font-size: 21px;
+    }
+    .navbar-on-right{
+        display: none;
+    }
+    .navbar{
+        text-align: center;
+    }
+    .navbar .navbar-brand{
+        float: none;
+    }
+    .navbar .navbar-brand img{
+        display: inline-block;
+    }
+    .center{
+        display: block;
+    }
+    .cards-col,
+    .pdf,
+    #sign-up h2{
+        text-align: center;
+    }
+    
+    .container{
+        padding: 0 5%;
+        max-width: 480px;
+        width: 100%;
+    }
+    .store-xs{
+        margin: 10px 0 50px 0;
+    }
+    .store-xs img{
+        margin-bottom: 10px;
+        width: 42%;
+    }
+    #product-description{
+        margin-bottom: 25px;
+    }
+
+    #sign-up form{
+        width: 100%;
+    }
+    .last-call{
+        font-size: 20px;
+    }
+    form{
+        width: 80% !important;
+    }
+
+}
+
+/* Medium devices (desktops, 992px and up) */
+@media (max-width: 992px) { 
+    form{
+        width: 120%;
+    }
+}
+
+/* Large devices (large desktops, 1200px and up) */
+@media (min-width: @screen-lg-min) { ... }
