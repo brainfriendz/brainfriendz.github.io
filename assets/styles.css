@@ -317,6 +317,7 @@ MEDIA QUERIES
     }
     form{
         width: 80% !important;
+        marigin: 20px auto;
     }
 
 }
